@@ -1,0 +1,16 @@
+.contactsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.contactsItem {
+  color: rgb(119, 136, 153);
+}
+.contactsItem:hover {
+  color: rgba(240, 73, 22, 0.87);
+}

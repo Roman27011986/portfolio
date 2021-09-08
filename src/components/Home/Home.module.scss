@@ -1,0 +1,64 @@
+$icons: "css", "git", "html", "javascript", "mongo", "node", "react", "redux",
+  "sass";
+
+.homeContentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.title {
+  font-family: "Oxygen", sans-serif;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.text {
+  font-family: "Oxygen", sans-serif;
+  font-size: 30px;
+  color: rgb(119, 136, 153);
+}
+.mainImg {
+  object-fit: contain;
+}
+.imgBox {
+  overflow: hidden;
+  border-radius: 5px;
+  width: 250px;
+}
+//tech skills
+.techSkills {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgba(119, 136, 153, 0.061);
+  padding: 10px;
+  border: 1px solid rgba(119, 136, 153, 0.157);
+  border-radius: 5px;
+}
+.techSkillsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.techSkillsText {
+  font-family: "Oxygen", sans-serif;
+  font-size: 20px;
+  color: rgb(119, 136, 153);
+}
+
+@each $iconName in $icons {
+  .icon#{$iconName} {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../images/techicons/#{$iconName}.png");
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.navContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(119, 136, 153, 0.061);
+  border-bottom: 1px solid rgba(119, 136, 153, 0.253);
+}
+
+.navItem {
+  font-family: "Oxygen", sans-serif;
+  font-size: 22px;
+  color: #000;
+}
+.activeScale + .activeScale {
+  margin-left: 40px;
+}
+.active {
+  color: brown;
+}
+.activeScale {
+  transition: all 0.2s ease-in-out;
+}
+.activeScale:hover {
+  transform: scale(1.2);
+}
